@@ -13,6 +13,6 @@ double Calculator::Calculate(double x, char oper, double y)
 	case '/':
 		return x / y;
 	default:
-		break;
+		return 0.0;
 	}
 }
