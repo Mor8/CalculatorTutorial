@@ -20,7 +20,15 @@ int main()
     while (true)
     {   
         cin >> x >> oper >> y;
-        result = c.Calculate(x, oper, y);
+        if (oper == '/' && y == 0)
+        {
+            cout << "Devision by 0 exception" << endl;
+            continue;
+        }
+        else
+        {
+            result = c.Calculate(x, oper, y);
+        }
         cout << "Result is: " << result << endl;
     }
     return 0;
